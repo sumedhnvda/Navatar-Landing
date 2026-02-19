@@ -5,12 +5,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
-import { Menu } from "lucide-react"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -54,33 +49,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button>Get Started</Button>
+          <Button asChild>
+            <Link href="/get-started">Get Started</Link>
+          </Button>
         </nav>
 
-        {/* Mobile Nav */}
-        <div className="md:hidden flex items-center gap-4">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <div className="flex flex-col gap-4 mt-8">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-lg font-medium text-foreground hover:text-primary"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <Button className="w-full">Get Started</Button>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+
       </div>
     </header>
   )

@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 export function Hero() {
@@ -37,8 +38,10 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
         >
-          <Button size="lg" className="gap-2 h-12 px-8 text-base">
-            Get Started <ArrowRight className="h-4 w-4" />
+          <Button size="lg" className="gap-2 h-12 px-8 text-base" asChild>
+            <Link href="/get-started">
+                Get Started <ArrowRight className="h-4 w-4" />
+            </Link>
           </Button>
         </motion.div>
 

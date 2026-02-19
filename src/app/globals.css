@@ -54,26 +54,26 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%; /* Light Blue-ish White */
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --background: hsl(210 40% 98%); /* Light Blue-ish White */
+    --foreground: hsl(222.2 84% 4.9%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222.2 84% 4.9%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222.2 84% 4.9%);
     /* Solid Blue Primary - oklch(0.55 0.22 260) approx equivalent to blue-600 */
-    --primary: 0.55 0.22 260;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 214 95% 93%; /* Stronger Light Blue */
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 214 95% 93%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 214 95% 93%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --primary: oklch(0.55 0.22 260);
+    --primary-foreground: hsl(210 40% 98%);
+    --secondary: hsl(214 95% 93%); /* Stronger Light Blue */
+    --secondary-foreground: hsl(222.2 47.4% 11.2%);
+    --muted: hsl(214 95% 93%);
+    --muted-foreground: hsl(215.4 16.3% 46.9%);
+    --accent: hsl(214 95% 93%);
+    --accent-foreground: hsl(222.2 47.4% 11.2%);
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(210 40% 98%);
+    --border: hsl(214.3 31.8% 91.4%);
+    --input: hsl(214.3 31.8% 91.4%);
+    --ring: hsl(221.2 83.2% 53.3%);
     --radius: 0.5rem;
   }
 }
